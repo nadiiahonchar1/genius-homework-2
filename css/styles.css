@@ -1,0 +1,190 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic_latin-regular.ttf') format('truetype');
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic_latin-500.ttf') format('truetype');
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic_latin-700.ttf') format('truetype');
+}
+/* play-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/play-v19-cyrillic_latin-regular.ttf') format('truetype');
+}
+/* play-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/play-v19-cyrillic_latin-700.ttf') format('truetype');
+}
+
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-dark: #011c44;
+  --color-primary-accent: #2b7fff;
+
+  --color-secondary-harddark: #000;
+  --color-secondary-light: #747272;
+  --color-secondary-dark: #4a4a4a;
+  --color-secondary-accent: #ffd02b;
+  --color-secondary: #011f4a;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: var(--color-primary-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.link-header {
+  color: var(--color-primary-dark);
+  font-weight: 400;
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+.link-header:hover,
+.link-header:focus,
+.link-header:active {
+  font-weight: 700;
+  color: var(--color-primary-accent);
+}
+
+.hero-title {
+  font-weight: 400;
+}
+
+.hero-title .accent {
+  color: var(--color-primary-accent);
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.81;
+  text-transform: capitalize;
+  font-family: 'Play', sans-serif;
+}
+
+.button {
+  padding: 16px 32px;
+
+  background-color: var(--color-primary-accent);
+  color: var(--color-primary-light);
+  font-weight: 600px;
+  font-family: inherit;
+
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-accent);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: transparent;
+  border: 2px solid var(--color-primary-accent);
+  color: var(--color-primary-dark);
+  padding: 16px 32px;
+}
+
+.hero-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.section-title .accent {
+  color: var(--color-primary-accent);
+  font-family: 'Play', sans-serif;
+}
+
+.about-us-section .second-accent {
+  color: var(--color-primary-dark);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.toCapitalize {
+  text-transform: capitalize;
+}
+.about-us-section p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.72;
+}
+
+.why-us-section p {
+  color: var(--color-secondary-harddark);
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.our-work-section h3 {
+  color: var(--color-primary-light);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.link-footer {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.link-footer:hover,
+.link-footer:focus,
+.link-footer:active {
+  font-weight: 700;
+  color: var(--color-primary-accent);
+}
+
+footer p {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.address {
+  font-style: normal;
+}
