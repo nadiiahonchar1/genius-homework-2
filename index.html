@@ -71,7 +71,9 @@
               zone</span
             >
           </h1>
-          <button type="button" class="button">Замовити дзвінок</button>
+          <button type="button" class="button modal-btn-open">
+            Замовити дзвінок
+          </button>
           <p class="hero-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -98,25 +100,27 @@
                 </p>
               </div>
             </div>
-            <img
-              src="./images/face-before.jpg"
-              alt="Вигляд обличчя до відвідування клініки"
-              class="face-img"
-            />
-            <svg class="star1" width="64" height="64">
-              <use href="./images/svg-icons.svg#icon-Star1"></use>
-            </svg>
-            <svg class="star2" width="40" height="40">
-              <use href="./images/svg-icons.svg#icon-Star1"></use>
-            </svg>
-            <svg class="star3" width="16" height="16">
-              <use href="./images/svg-icons.svg#icon-Star1"></use>
-            </svg>
-            <img
-              src="./images/face-after.jpg"
-              alt="Вигляд обличчя після відвідування клініки"
-              class="face-img"
-            />
+            <div class="img-container">
+              <img
+                src="./images/face-before.jpg"
+                alt="Вигляд обличчя до відвідування клініки"
+                class="face-img face-before"
+              />
+              <svg class="star1 star" width="64" height="64">
+                <use href="./images/svg-icons.svg#icon-Star1"></use>
+              </svg>
+              <svg class="star2 star" width="40" height="40">
+                <use href="./images/svg-icons.svg#icon-Star1"></use>
+              </svg>
+              <svg class="star3 star" width="16" height="16">
+                <use href="./images/svg-icons.svg#icon-Star1"></use>
+              </svg>
+              <img
+                src="./images/face-after.jpg"
+                alt="Вигляд обличчя після відвідування клініки"
+                class="face-img face-after"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -180,7 +184,7 @@
             <ul class="our-work-list">
               <li class="our-work-item">
                 <article class="our-work-card">
-                  <!-- <h3>Маски для обличчя</h3> -->
+                  <h3>Маски <br />для обличчя</h3>
                   <img
                     src="./images/Face-masks.jpg"
                     alt="Зображення процедури з масками для обличчя"
@@ -189,7 +193,7 @@
               </li>
               <li class="our-work-item">
                 <article class="our-work-card">
-                  <!-- <h3>Ін'єкції для обличчя</h3> -->
+                  <h3>Ін'єкції <br />для обличчя</h3>
                   <img
                     src="./images/Injections-for-the-face.jpg"
                     alt="Зображення процедури з ін'єкціями для обличчя для обличчя"
@@ -198,7 +202,7 @@
               </li>
               <li class="our-work-item">
                 <article class="our-work-card">
-                  <!-- <h3>Очищення обличчя</h3> -->
+                  <h3>Очищення <br />обличчя</h3>
                   <img
                     src="./images/Facial-cleansing.jpg"
                     alt="Зображення процедури очищення обличчя"
@@ -313,5 +317,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal-btn-close">Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

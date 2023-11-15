@@ -140,7 +140,7 @@ p {
 }
 
 .about-us-section {
-  padding-top: 96px;
+  padding-top: 0;
 }
 
 .link-header {
@@ -306,6 +306,7 @@ footer p {
 .footer {
   padding: 56px 0;
   background-color: var(--color-primary-dark);
+  position: relative;
 }
 
 .header-icon {
@@ -326,6 +327,25 @@ footer p {
   gap: 28px;
 }
 
+.about-us-text-container {
+  padding-top: 40px;
+  flex-basis: 50%;
+}
+
+.img-container {
+  flex-basis: 50%;
+}
+
+.face-before {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.face-after {
+  display: block;
+  margin-left: auto;
+}
+
 .face-img {
   width: 340px;
   height: 340px;
@@ -334,19 +354,31 @@ footer p {
   flex-shrink: 0;
 }
 
+.img-container {
+  position: relative;
+}
+
+.star {
+  flex-shrink: 0;
+  position: absolute;
+}
+
 .star1 {
   fill: var(--color-secondary);
-  flex-shrink: 0;
+  top: 355px;
+  left: 140px;
 }
 
 .star2 {
   fill: var(--color-primary-accent);
-  flex-shrink: 0;
+  top: 30px;
+  right: 0;
 }
 
 .star3 {
   fill: var(--color-secondary-light);
-  flex-shrink: 0;
+  top: 260px;
+  right: 40px;
 }
 
 .why-us-section-list {
@@ -420,6 +452,14 @@ footer p {
     #011c44 101.39%
   );
   overflow: hidden;
+  position: relative;
+}
+
+.our-work-card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  text-align: center;
 }
 
 .maps {
@@ -449,4 +489,47 @@ footer p {
 .address-list,
 .address-info {
   flex-grow: 1;
+}
+
+.footer::after {
+  content: '';
+  background-image: url(../images/glasses.png);
+  width: 247px;
+  height: 152px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 723px;
+  height: 681px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+  position: relative;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
